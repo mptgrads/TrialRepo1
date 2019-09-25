@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+   <hta:application navigable="yes" />
+   <html>
+      <head>
+         <link rel="stylesheet" href="css\bootstrap.css">
+         <link rel="stylesheet" href="css\InstallingMATLAB.css">
+      </head>
+      <body>
+		  <div id="TitleBar">
+			 <div id="MPT_Logo">
+				 <img src="Images/MPT Logo.png"/>
+			 </div>	
+			 <div id="HTAname">
+				 <p class="text-center">Upgrading MApps to run with MATLAB 2019b</p>
+			 </div>
+		  </div>
+		  <div id="NavPane" class="border-right border-primary">
+			 <h3> <strong>Contents</strong>
+			 </h3>
+
+			<nav id="navbar-example3" class="navbar navbar-light">
+			  <a class="navbar-brand" href="#">Overview</a>
+			  <a class="navbar-brand" href="#license">Licenses</a>
+			  <a class="navbar-brand" href="#install">Installing MATLAB</a> 
+			  <a class="navbar-brand" href="#other">Updating MApps</a>
+			</nav>
+		  </div>
+		  <div id="SearchHelp" class="border-top border-primary">
+			<p>Search this page: <br /><b>Ctrl + F</b></p>
+			</div>
+			<div id="Development"class="border-top border-primary">
+			<p>Version 1.0</p>
+			<p>Contact <a href="mailto:ainhoa.begiristain@gb.mahle.com?subject=MApps%20Installation%20Guide"><strong>HERE</strong></a> for suggestions or errors</p>
+		  </div>
+			
+			
+					  
+		  	<div id="BodyText">
+				<h3 id="Overview"><strong>Overview</strong></h3>
+				This guide contains the instructions to upgrade the MATLAB version MApps uses:<br>
+				<li>Make sure you have a <a href="#license"><b>license</b></a></li>
+				<li>Install <a href="#install"><b>MATLAB 2019b</b></a></li>
+				<li>Update <a href="#other"><b>MApps</b></a></li>
+				<p id="license"></p>
+				<br>
+				<br>
+				<br>
+				<br>
+				<h3><strong>2019b licenses</strong></h3>
+				<p>In order to run MATLAB on your laptop, you must have been assigned a MATLAB license. You should have received an email from Ainhoa Begiristain with license details. <br>
+				If you have the <span class="text-primary">File Installation Key</span> and the <span class="text-primary">license filepath</span>, go to section <a href="#install"><b>Installing MATLAB</b></a>. Otherwise keep reading.</p>
+					
+					
+				<p>The installation requires the <span class="text-secondary">File Installation Key</span> as well as a <span class="text-secondary">License File</span>. </p>
+				<p>If you do not have a license, or if you are installing MATLAB in a new laptop, please <a href="mailto:ainhoa.begiristain@gb.mahle.com?subject=MATLAB%20License"><strong>email Ainhoa Begiristain</strong></a> with the following information: <br>
+				<li>Mahle login username (e.g. <span class="text-primary">M0070182</span>)</li>
+				<li>Version of MATLAB required (e.g. <span class="text-primary">R2019b for MApps</span>)</li>
+				<li>Volume Serial Number of your computer (e.g. <span class="text-primary">80E7-A292</span>)</li><br>
+				This can be obtained from the <span class="text-secondary">Command Prompt</span> by navigating to the drive MATLAB will be installed (usually C:\ drive) and entering the keyword <b>vol</b></p>
+				<img src="Images/vsn.png" class="img-fluid"><br><br>
+				<p id="install"></p>
+				<br><br>
+				<br>
+				<br>
+				<br><h3><b>Installing MATLAB 2019b</b></h3>
+				<p>The MATLAB R2019b install set is located here: <a href="//itc.global.mahle/nh-group/T&A/Reference/Software install sets/Mathworks/Matlab R2019b/Installation Files/" target="_explorer.exe">G:/T&A/Reference/Software install sets/Mathworks/Matlab R2019b/Installation Files/</a></p>
+				<p>Double click on <span class="lead">setup.exe</span> and follow these steps:</p>
+				<img src="images\19b\a.png" class="img-fluid">
+				<img src="images\19b\b.png" class="img-fluid">
+				<img src="images\19b\c.png" class="img-fluid">
+				<img src="images\19b\d.png" class="img-fluid">
+				<img src="images\19b\e.png" class="img-fluid">
+				<img src="images\19b\f.png" class="img-fluid">
+				<img src="images\19b\g.png" class="img-fluid">
+				<img src="images\19b\h.png" class="img-fluid">
+				<img src="images\19b\i.png" class="img-fluid">
+				<img src="images\19b\j.png" class="img-fluid">
+				<img src="images\19b\k.png" class="img-fluid">
+				<img src="images\19b\l.png" class="img-fluid">
+				<p id="other"></p>
+				<p></p>
+				<br>
+				<br>
+				<br>
+				<br><h3><b>Upgrading MATLAB in MApps</b></h3>
+				To upgrade the version of MATLAB used with MApps, first update your CalLogiq repository. To do so, launch the <b>TortoiseHg Workbench</b>.<br>
+				An easy way to launch the workbench is to right click on your Desktop and select <b>Hg Workbench</b>
+				<br><br><img src="images\mapps\t.PNG" class="img-fluid"><br><br>
+				In <b>CalLogiq</b> repository, <b>Pull incoming changes</b>
+				<br><br><img src="images\mapps\t1.PNG" class="img-fluid"><br><br>
+				A number of revisions will load, including some from branch <b>AB - MATLAB 2019</b>
+				<br><br><img src="images\mapps\t2.PNG" class="img-fluid"><br><br>
+				Select <b>the latest changeset</b>, right click and <b>Update...</b>
+				<br><br><img src="images\mapps\t3.PNG" class="img-fluid"><br><br>
+				In the pop up window, click on <b>Update</b>
+				<br><br><img src="images\mapps\t4.PNG" class="img-fluid"><br><br>
+				Done! CalLogiq repository was updated
+				<br><br><img src="images\mapps\t5.PNG" class="img-fluid"><br><br>
+				Once the <b>CalLogiq</b> repository has been updated, launch MApps and usual and go into <b>MAHLE mode</b> by pressing <b>Ctrl + M</b>.<br>
+				Enter the password <b>saints</b> in the pop up window. 
+				<br><br><img src="images\mapps\mm1.PNG" class="img-fluid"><br><br>
+				Click on <b>Controls</b> on top of the screen, and go to <b>Load Central > Settings</b>
+				<br><br><img src="images\mapps\b.PNG" class="img-fluid"><br><br>
+				In Settings, change the filepath in <b>_031MatlabExe40</b> so that it references the MATLAB 2019b executable
+				<br><br><img src="images\mapps\c.PNG" class="img-fluid">
+				<img src="images\mapps\d.PNG" class="img-fluid"><br><br>
+				Click on another setting so that the change is saved, and close MApps. The next time you launch MApps it will do so with MATLAB 2019b!<br>
+				You can keep both versions of MATLAB installed during the transition period as long as your computer has enough memory. <br>
+				You can switch back to 2013b anytime following the same steps and updating the filepath to reference the 2013b executable again. 
+			<br>
+			<br>
+			<br>
+		  </div>
+	  </body>
+   </html>
